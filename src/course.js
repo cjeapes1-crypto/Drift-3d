@@ -34,19 +34,26 @@ export function createCourse(scene){
 
     // Hairpin
 
-    const curve = new THREE.Mesh(
+    // Hairpin
 
-        new THREE.TorusGeometry(
-            40,
-            15,
-            16,
-            60,
-            Math.PI
-        ),
+const curve = new THREE.Mesh(
 
-        roadMaterial
+    new THREE.TorusGeometry(
+        40,
+        15,
+        16,
+        60,
+        Math.PI
+    ),
 
-    );
+    roadMaterial
+
+);
+
+curve.rotation.x = Math.PI/2;
+curve.position.set(0,0,-110);
+
+scene.add(curve);
 
     curve.rotation.x = Math.PI/2;
     curve.position.set(0,0,-110);
