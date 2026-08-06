@@ -68,3 +68,57 @@ canvas{
     background:linear-gradient(90deg,#00c8ff,#008cff);
     transition:width .1s linear;
 }
+
+#touchControls{
+    position:fixed;
+    bottom:30px;
+    left:0;
+    right:0;
+    pointer-events:none;
+    z-index:100;
+}
+
+
+#steering{
+    position:absolute;
+    left:30px;
+    bottom:0;
+    pointer-events:auto;
+}
+
+
+#pedals{
+    position:absolute;
+    right:30px;
+    bottom:0;
+    pointer-events:auto;
+}
+
+
+#touchControls button{
+
+    width:80px;
+    height:80px;
+
+    margin:10px;
+
+    border-radius:50%;
+
+    font-size:35px;
+
+    background:#222;
+
+    color:white;
+
+    border:3px solid white;
+
+    opacity:0.8;
+
+}
+
+
+#pedals button{
+
+    display:block;
+
+}
