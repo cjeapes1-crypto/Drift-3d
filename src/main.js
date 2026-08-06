@@ -1,3 +1,5 @@
+import { createCourse } from "./course.js";
+
 import * as THREE from "three";
 
 import { Player } from "./player.js";
@@ -84,26 +86,8 @@ new THREE.AmbientLight(
 
 // Road
 
-const road =
-new THREE.Mesh(
+createCourse(scene);
 
-    new THREE.PlaneGeometry(
-        500,
-        500
-    ),
-
-    new THREE.MeshStandardMaterial({
-        color:0x444444
-    })
-
-);
-
-
-road.rotation.x =
--Math.PI/2;
-
-
-scene.add(road);
 
 
 
