@@ -65,26 +65,22 @@ new THREE.PerspectiveCamera(
 
 // Lighting
 
-const light =
-new THREE.DirectionalLight(
-0xffffff,
-2
+const sun = new THREE.DirectionalLight(
+    0xffffff,
+    3
 );
 
-light.position.set(
-20,
-30,
-20
-);
+sun.position.set(40,60,30);
+sun.castShadow = true;
 
-scene.add(light);
-
+scene.add(sun);
 
 scene.add(
-new THREE.AmbientLight(
-0xffffff,
-0.8
-)
+    new THREE.HemisphereLight(
+        0xb1e1ff,
+        0x444422,
+        2
+    )
 );
 
 
