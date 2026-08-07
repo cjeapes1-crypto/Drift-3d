@@ -233,9 +233,6 @@ function animate(){
 
 }
 
-
-animate();
-
 const hud=document.createElement("div");
 
 hud.style.position="fixed";
@@ -274,6 +271,10 @@ renderer.setSize(
 window.innerWidth,
 window.innerHeight
 );
+
+    animate();
+
+
 
 
 });
