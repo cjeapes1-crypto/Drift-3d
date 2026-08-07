@@ -236,6 +236,26 @@ function animate(){
 
 animate();
 
+const hud=document.createElement("div");
+
+hud.style.position="fixed";
+hud.style.left="20px";
+hud.style.top="20px";
+
+hud.style.background="rgba(0,0,0,.5)";
+
+hud.style.padding="15px";
+
+hud.style.borderRadius="15px";
+
+hud.style.color="white";
+
+hud.style.fontFamily="Arial";
+
+hud.style.fontSize="24px";
+
+document.body.appendChild(hud);
+
 
 
 window.addEventListener(
