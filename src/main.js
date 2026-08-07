@@ -89,6 +89,18 @@ scene.add(
 
 createCourse(scene);
 
+// Large grass field
+const grass = new THREE.Mesh(
+    new THREE.PlaneGeometry(800, 800),
+    new THREE.MeshStandardMaterial({
+        color: 0x3ba93b
+    })
+);
+
+grass.rotation.x = -Math.PI / 2;
+grass.position.y = -0.01; // slightly below the road
+scene.add(grass);
+
 
 
 
